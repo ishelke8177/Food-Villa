@@ -33,7 +33,7 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-evenly">
         {filteredRestaurants?.length === 0 ? (
           <h3>No Restaurants found...</h3>
         ) : (

@@ -8,10 +8,11 @@ const Title = () => {
 };
 
 const Header = () => {
+  // subscribe to the cart items
   const cartItems = useSelector(store => store.cart.items)
 
   return (
-    <div className="flex py-1 justify-between border-black bg-pink-50 shadow-lg">
+    <div className="flex align-middle py-1 justify-between border-black bg-pink-50 shadow-lg">
       <Title />
       <div className=''>
         <ul className="flex">
@@ -25,7 +26,7 @@ const Header = () => {
             <Link to={'/contact'}>Contact</Link>
           </li>
           <li className='px-2'>
-            <Link to={'/cart'}>Cart- {cartItems.length} items</Link>
+            <Link to={'/cart'}>Cart-{cartItems.length}</Link>
           </li>
         </ul>
       </div>

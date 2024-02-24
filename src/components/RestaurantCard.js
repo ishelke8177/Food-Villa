@@ -1,14 +1,7 @@
 import { Link } from 'react-router-dom';
 import { IMG_URL } from '../data/constants';
 
-const RestaurantCard = ({
-  id,
-  name,
-  cuisines,
-  avgRating,
-  costForTwo,
-  cloudinaryImageId,
-}) => {
+const RestaurantCard = ({ id, name, cuisines, avgRating, costForTwo, cloudinaryImageId }) => {
   return (
     <Link to={'/restaurant/' + id}>
       <div className="w-[200px] h-[300px] p-2 m-2 shadow-lg bg-pink-50 rounded-lg">
@@ -28,7 +21,7 @@ const RestaurantCard = ({
             {"⭐ "}
             {avgRating}
           </div>
-          <div className="text-yellow-900">
+          <div className="text-yellow-900 text-xs">
             {cuisines.length > 5
               ? cuisines.slice(0, 5).join(" , ") + " ..."
               : cuisines.join(" , ")}
