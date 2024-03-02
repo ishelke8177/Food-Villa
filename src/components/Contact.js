@@ -3,14 +3,11 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <div className=" col- 10 mx-8 container ">
-        <main className="px-4 py-8">
+      <div className="col-10 container ">
+        <main className="py-8 flex-col justify-center">
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
-            <p className="text-black-400">
-              Have a question or feedback? Reach out to us, and we'll get back
-              to you as soon as possible.
-            </p>
+
             <form className="mt-6">
               <div className="grid grid-cols-1 gap-4">
                 <div>

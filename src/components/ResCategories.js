@@ -15,7 +15,7 @@ const ResCategories = ({ data, showIndex, setshowIndex, showless }) => {
   
   return (
     <>
-      <div className=" w-6/12 mx-auto  ">
+      <div className="w-6/12 mx-auto">
         <div
           className="bg-gray-100 flex justify-between  shadow-lg border-b-2 p-4 m-4"
           onClick={handleclick}

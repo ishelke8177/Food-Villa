@@ -11,9 +11,7 @@ const Body = () => {
   // early return
   if (!allRestaurants) return null;
 
-  return allRestaurants.length === 0 ? (
-    <Shimmer />
-  ) : (
+  return (
     <>
       <div className="search-container p-1 bg-pink-50 my-5">
         <input
@@ -33,17 +31,20 @@ const Body = () => {
           Search
         </button>
       </div>
-      <div className="flex flex-wrap justify-evenly">
-        {filteredRestaurants?.length === 0 ? (
-          <h3>No Restaurants found...</h3>
-        ) : (
-          filteredRestaurants.map((restaurant) => {
-            return (
-              <RestaurantCard {...restaurant.info} key={restaurant?.info?.id} />
-            );
-          })
-        )}
-      </div>
+      {allRestaurants.length === 0 ? 
+          <Shimmer/> : 
+          <div className="flex flex-wrap justify-evenly">
+            {filteredRestaurants?.length === 0 ? (
+              <h3>No Restaurants found...</h3>
+            ) : (
+              filteredRestaurants.map((restaurant) => {
+                return (
+                  <RestaurantCard {...restaurant.info} key={restaurant?.info?.id} />
+                );
+              })
+            )}
+          </div>
+      }
     </>
   );
 };

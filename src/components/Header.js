@@ -1,9 +1,10 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { Logo } from '../assets';
 
 const Title = () => {
   return (
-    <img className="h-20 p-2" alt="logo" src="https://lh3.googleusercontent.com/Em7AHf7XBH_RtGfCBVXz9RH8SM_pHkj3xPP-yd3cRguY1_Jc8fmqgx6WxnvGVyPV5xs5gL3HCD0FCuv6Xo4CwoY6ak4"/>
+    <img data-testid="logo" className="justify-center h-20 p-2" alt="logo" src={Logo}/>
   );
 };
 
@@ -12,10 +13,12 @@ const Header = () => {
   const cartItems = useSelector(store => store.cart.items)
 
   return (
-    <div className="flex align-middle py-1 justify-between border-black bg-pink-50 shadow-lg">
-      <Title />
+    <div className="sm:flex align-middle py-1 justify-between border-black bg-pink-50 shadow-lg">
+      <div className='flex justify-center'>
+        <Title />
+      </div>
       <div className=''>
-        <ul className="flex">
+        <ul className="flex justify-center sm:mt-6">
           <li className='px-2'>
             <Link to={'/'}>Home</Link>
           </li>

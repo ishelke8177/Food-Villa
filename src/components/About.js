@@ -3,18 +3,18 @@ const About = () => {
   return (
     <div className="flex justify-center">
       <div className="container mx-9 mt-6 mb-6">
-        <div className="h-[120px]  flex flex-wrap mt-3 justify-center bg-pink-50 shadow-lg">
+        <div className="h-[290px] sm:h-[120px] flex flex-wrap overflow-hidden mt-3 justify-center bg-pink-50 shadow-lg">
           <h1 className="text-bold text-2xl text-red-500">Welcome to Food Villa – Where Flavor Meets Convenience!</h1>
-          <span className="p-2">
+          <p className="p-3 w-full">
             At Food Villa, we're on a mission to make every meal memorable. Our
             app connects food enthusiasts with diverse cuisines, local
             favorites, and curated recipes. With a user-friendly interface,
             endless variety, and a thriving community, Food Villa is your go-to
             for delicious experiences. Join us on this culinary adventure –
             download the app today and savor the flavors that matter to you!
-          </span>
+          </p>
         </div>
-        <div className="h-[120px] flex flex-wrap mt-4 justify-center bg-pink-50 shadow-lg">
+        <div className="h-[270px] sm:h-[120px] flex flex-wrap overflow-hidden mt-4 justify-center bg-pink-50 shadow-lg">
           <h1 className="text-bold text-2xl text-red-500">Our Mission</h1>
           <span className="p-2">
             At the heart of Food Villa's mission is the commitment to redefine
@@ -25,7 +25,7 @@ const About = () => {
             moments that matter.
           </span>
         </div>
-        <div className="col-12 h-[120px]  mt-4  bg-pink-50 shadow-lg">
+        <div className="col-12 h-[330px] sm:h-[120px] overflow-hidden mt-4 bg-pink-50 shadow-lg">
           <div className=" ms-2 col-12 justify-center">
             <h1 className="text-bold text-2xl text-red-500">
               Why Choose Food Villa
